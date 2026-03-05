@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Home Service Assistant</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Smart Home Service Assistant</h1>
+    <nav>
+      <a href="/login">Login</a>
+      <a href="/register">Register</a>
+      <a href="/user-dashboard">User Dashboard</a>
+      <a href="/worker-dashboard">Worker Dashboard</a>
+      <a href="/admin-dashboard">Admin Dashboard</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <h2>Book trusted home services in minutes</h2>
+      <p>Electrical, plumbing, carpentry, painting, masonry, cleaning and appliance repair — all in one place.</p>
+      <a class="btn" href="/user-dashboard">Book a Service</a>
+    </section>
+    <section id="services" class="grid"></section>
+  </main>
+
+  <div class="chatbot-widget">
+    <button id="chatToggle">💬 Ask Assistant</button>
+    <div id="chatPanel" class="chat-panel hidden">
+      <h3>AI Service Assistant</h3>
+      <div id="chatMessages" class="chat-messages"></div>
+      <input id="chatInput" placeholder="Need plumber in Bangalore" />
+      <button id="chatSend">Send</button>
+    </div>
+  </div>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
