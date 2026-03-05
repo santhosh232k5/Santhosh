@@ -1,0 +1,10 @@
+<!doctype html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>User Dashboard</title><link rel="stylesheet" href="/static/css/style.css"></head>
+<body><main class="container"><div class="card"><h2>User Dashboard</h2><p>Login as user first. JWT is stored in browser localStorage.</p>
+<form id="bookingForm" class="form-grid">
+<select name="service_category"><option>Electrical Works</option><option>Plumbing</option><option>Carpentry</option><option>Painting</option><option>Masonry</option><option>Cleaning</option><option>Appliance Repair</option></select>
+<input name="latitude" placeholder="Your Latitude" required><input name="longitude" placeholder="Your Longitude" required>
+<select name="payment_method"><option>UPI</option><option>Cash on Service</option></select>
+<button class="btn">Create Booking</button></form>
+<button id="loadBookings" class="btn secondary">Load My Bookings</button>
+<pre id="bookingOutput"></pre><p><a href="/">Home</a></p></div></main><script src="/static/js/main.js"></script></body></html>
